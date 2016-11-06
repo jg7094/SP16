@@ -51,10 +51,21 @@ nav{
 
 .vozicek {
 	padding-top: 5%;
-	text-align: center; 
+	text-align: center;
+	float: left;
+	margin-left: 20%;
 }
 .vozicek input{
 	
+}
+
+.reklame{
+	padding-top: 5%;
+	float: right;
+	margin-right: 20%;
+}
+.reklame img{
+	width: 320px;
 }
 
 footer{
