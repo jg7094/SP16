@@ -1,0 +1,62 @@
+
+header{
+	background: -webkit-linear-gradient(left, #FFFFFF, #2196f3, #1464f6); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #FFFFFF, #2196f3, #1464f6); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #FFFFFF, #2196f3, #1464f6); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #FFFFFF, #2196f3, #1464f6); /* Standard syntax */
+	height: 100px;
+	width: 100%;
+/*	border-bottom-style: ridge;
+	border-bottom-color: #000000;*/
+}
+nav{
+	background: #1464f6;
+	height: 42px;
+}
+
+
+.allign-left{
+	float: left;
+	padding-left: 5%;
+}
+
+.allign-right{
+	float: right;
+	padding-right: 5%;
+}
+
+.kategorije{
+	float: left;
+	padding-left: 5%;
+	width: 15%;
+	padding-top: 2%;
+    border-right: thick solid #000000;
+}
+
+.item-grid{
+	width: 23%;
+	float: left;
+	padding-left: 2%;
+	padding-top: 2%;
+}
+
+.item-grid img{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+	width: 300px;
+    height: auto;
+	
+}
+
+.vozicek {
+	padding-top: 5%;
+	text-align: center; 
+}
+.vozicek input{
+	
+}
+
+footer{
+
+}
