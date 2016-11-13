@@ -3,7 +3,7 @@
 <html> 
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="oblika.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>JAG</title>
 	</head>
 	<body>
@@ -25,20 +25,20 @@
 				</form>
 			</div>
 		</nav>
-		<div class="sredina">
+		<article>
 			<div class="vozicek">
-				<form>
-					podatki<input type="text"></br></br>
-					podatki<input type="text"></br></br>
-					podatki<input type="text"></br></br>
-					podatki<input type="text"></br></br>
-				</form>
+				<form class="article-comment" method="POST" action="#">
+					<label>Vaše ime:</label> <input type="text" name="user" pattern=".* .*" title="Vpišite dve besedi" placeholder="ime priimek" required />
+					<label>Vaš email:</label> <input type="email" name="user" required />
+					<label>Vaše geslo:</label> <input type="password" name="geslo" placeholder="geslo" required />
+				<label><input type="submit" value="Nadaljuj" /></label>
+            </form>
 			</div>
 			<div class="reklame">
 				reklame
 				<img src="./img/sample.jpg" alt="slika izdelka" />
 			</div>
-		</div>
+		</article>
 		
 	</body>
 <html>

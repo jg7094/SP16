@@ -12,6 +12,7 @@ header{
 nav{
 	background: #1464f6;
 	height: 42px;
+	clear: both;
 }
 
 
@@ -49,6 +50,15 @@ nav{
 	
 }
 
+.vsebina{
+	float: right;
+	width: 80%;
+}
+.vsebina2{
+	float: right;
+	width: 100%;
+}
+
 .vozicek {
 	padding-top: 5%;
 	text-align: center;
@@ -68,6 +78,29 @@ nav{
 	width: 320px;
 }
 
-footer{
-
+ul {
+	list-style-type: none;
+	display: block;
 }
+li {
+	display: inline;
+}
+
+.vozicek form input{
+	float:left;
+}
+
+footer{
+	clear:both;
+}
+
+article form label {
+  float:left;
+  width:120px;
+  clear:left;
+  padding-top:5%;
+}
+article form input{
+	float: left;
+}
+
