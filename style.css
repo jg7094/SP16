@@ -39,6 +39,7 @@ nav{
 	float: left;
 	padding-left: 2%;
 	padding-top: 2%;
+	text-align: center;
 }
 
 .item-grid img{
@@ -100,7 +101,8 @@ article form label {
   clear:left;
   padding-top:5%;
 }
-article form input{
+article form input,
+article form select{
 	float: left;
 }
 
