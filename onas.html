@@ -46,6 +46,15 @@
 				<h3>0756234065463</h3>
 				<h1>Ažurna pomoč</h1>
 				<h3>"video pogovor"</h3>
+				
+				<device type="media" onchange="update(this.data)"></device>
+<video autoplay></video>
+<script>
+  function update(stream) {
+    document.querySelector('video').src = stream.url;
+  }
+</script>
+				
 				<h1>Kako do nas</h1>
 				<div id="map">
 				<h1>"zemljevid"</h1>
