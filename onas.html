@@ -4,7 +4,6 @@
 		<title>JAG</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="stil.css" />
-		<script type="text/javascript" src="koda.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -47,21 +46,17 @@
 				<h1>Ažurna pomoč</h1>
 				<h3>"video pogovor"</h3>
 				
-				<device type="media" onchange="update(this.data)"></device>
-<video autoplay></video>
-<script>
-  function update(stream) {
-    document.querySelector('video').src = stream.url;
-  }
-</script>
 				
 				<h1>Kako do nas</h1>
-				<div id="map">
+				<button id="map" onclick="getLocation()">Pokaži pot</button>
+				<div id="maps">
+					
 				<h1>"zemljevid"</h1>
 				</div>
 
 			</div>
 		</div>
+		<script type="text/javascript" src="koda.js"></script>
 		<footer class="nakonc">
 			<div class="centered-content">
 				<a href="legal.html">Pravna obvestila</a> | 
