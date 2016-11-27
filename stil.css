@@ -4,6 +4,10 @@
 	
 }
 
+body{
+	margin:0;
+}
+
 .isci{
 	float:right;
 	margin-right:5%;
@@ -173,6 +177,42 @@ footer a:hover,
 	margin-bottom: 100px;
 }
 
+.topnav{
+	display:none;
+	float:right;
+	margin:0;
+	padding:0;
+}
+
+ /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
 @media screen
   and (max-width: 1200px){
 	  .kategorije li{
@@ -188,9 +228,47 @@ footer a:hover,
   
 @media screen
   and (max-width: 840px){
-	  
+	  .resp{
+		  display: none;
+	  }
+	  .meniji img{
+		  width: 16%;
+	  }
+	  .isci{
+		  vertical-align:middle;
+	  }
+	  .topnav{
+		  display: inline;
+	  }
+	  ul.topnav li:not(:first-child) {display: none;}
+	  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
   }
 
+@media screen
+  and (max-width: 720px){
+	  nav{
+		  display: none;
+	  }
+	  section{
+		  width:96%;
+	  }
+	  .item-grid{
+			width: 96%;
+  }
+  
 @media screen
   and (min-width: 414px) {
     
