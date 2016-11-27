@@ -22,31 +22,14 @@
 			</div>
 		</header>
 		<div class="prva">
-			<div class="slika">
-				<img src="./img/sample.jpg" alt="slika izdelka" />
-			</div>
-			<div class="izdelek">
-				<form class="izbira" method="POST" action="#">
-					<p><label>Text</label>
-					<select>
-						<option value="t1">Izbira1</option>
-						<option value="t2">Izbira2</option>
-						<option value="t3">Izbira3</option>
-						<option value="t4">Izbira4</option>
-					</select></p>
-					<p><label>Text</label>
-					<select>
-						<option value="t1">Izbira1</option>
-						<option value="t2">Izbira2</option>
-						<option value="t3">Izbira3</option>
-						<option value="t4">Izbira4</option>
-					</select></p>
+			<div class="login">
+				<form class="article-comment" method="POST" action="#">
+					<label>Ime in priimek: </label> <input type="text" name="user" pattern=".* .*" title="Vpišite dve besedi" placeholder="ime priimek" required />
+					<label>Email: </label> <input type="email" name="user" required />
+					<label>Geslo: </label> <input type="password" name="geslo" placeholder="geslo" required />
+					<label>Ponovite geslo: </label> <input type="password" name="geslo2" placeholder="geslo" required />
+					<label><input type="submit" value="Vpis" /></label>
 				</form>
-				<div class="opis">
-					<h2> Opis </h2>
-					<p>text text text text text text text text text 
-					text text text text text text text </p>
-				</div>
 			</div>
 		</div>
 		<footer class="nakonc">

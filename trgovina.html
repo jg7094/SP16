@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-
-<html> 
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>JAG</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="stil.css" />
 	</head>
 	<body>
 		<header>
-			<div class="allign-left">
-				<img src="img/logo.svg" alt="Logotip" />
-				<span>
-					<a href="#">Domov</a> | 
-					<a href="#">O nas</a> | 
-					<a href="#">Izdelki</a> | 
+			<div class="centered-content">
+				<div class="meniji">
+					<img src="img/logo.svg" alt="Logotip" />
+					<a href="#">Domov</a>
+					<a href="#">O nas</a>
+					<a href="#">Izdelki</a>
 					<a href="#">Kontakt</a>
-				</span>
-			</div>
-			<div class="allign-right">
-				<div>Prijava | voziček<span class="glyphicon glyphicon-shopping-cart"></span></div>
-				<form>
-					<div class="search-bar">
-						Search <input type="text">
-					</div>
-				</form>
+					<a class="desna-stran" href="#">Prijava</a>
+					<a class="desna-stran" href="#">Košarica</a>
+					<span class="isci">Išči <input type="text"></span>
+					
+				</div>
 			</div>
 		</header>
-		<div class="sredina">
-			<nav class="kategorije">
+		<div id="main">
+			<nav>
 				<form>
 					<p>Text</p>
 					<input type="radio" name="item1" value="item1" checked> Item1<br/>
@@ -63,65 +58,136 @@
 					<input type="checkbox" name="item3" value="item3"> Item2<br/>
 				</form>
 			</nav>
-			
-			<div class="allign-left">
-				<ul>
-					<li>Pisarniški stoli</li> |
-					<li>Pisarniški fotelji</li> |
-					<li>Konferenčni stoli</li> |
-					<li>Stoli za jedilnice</li> |
-					<li>Oblazinjeno pohištvo</li> |
-				</ul>
-			</div>
-			
-			<div class="vsebina">
-				<div class="item-grid">
-					<h2>Text</h2>
-					<img src="./img/sample.jpg" alt="slika izdelka" />
-					<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
-					<div>
-						 <button type="button">Kupi</button> 
+			<section>
+				<div class="kategorije">
+					<ul>
+						<li><a href="#">Pisarniški stoli</a></li> 
+						<li><a href="#">Pisarniški fotelji</a></li> 
+						<li><a href="#">Konferenčni stoli</a></li> 
+						<li><a href="#">Stoli za jedilnice</a></li> 
+						<li><a href="#">Oblazinjeno pohištvo</a></li>
+					</ul>
+				</div>
+				<article>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
 					</div>
-				</div>
-				<div class="item-grid">
-					<h2>Text</h2>
-					<img src="./img/sample.jpg" alt="slika izdelka" />
-					<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
-				</div>
-				<div class="item-grid">
-					<h2>Text</h2>
-					<img src="./img/sample.jpg" alt="slika izdelka" />
-					<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
-					<div>
-						 <button type="button">Kupi</button> 
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
 					</div>
-				</div>
-				<div class="item-grid">
-					<h2>Text</h2>
-					<img src="./img/sample.jpg" alt="slika izdelka" />
-					<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
-					<div>
-						 <button type="button">Kupi</button> 
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
 					</div>
-				</div>
-				<div class="item-grid">
-					<h2>Text</h2>
-					<img src="./img/sample.jpg" alt="slika izdelka" />
-					<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
-					<div>
-						 <button type="button">Kupi</button> 
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
 					</div>
-				</div>
-				<div class="item-grid">
-					<h2>Text</h2>
-					<img src="./img/sample.jpg" alt="slika izdelka" />
-					<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
-					<div>
-						 <button type="button">Kupi</button> 
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
 					</div>
-				</div>
-			</div>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
+					</div>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
+					</div>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
+					</div>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
+					</div>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
+					</div>
+					<div class="item-grid">
+						<h2>Text</h2>
+						<img src="./img/sample.svg" alt="slika izdelka" />
+						<h4>Text TextTextText Text  Text TextText TextText, TextTextTextText Text vTextTextvv TextText  TextText Text TextTextText Text TextText</h4>
+						<div class="item-do">
+							<label>42.00 €</label>
+							<button type="button">Kupi</button>
+							<span> | | | </span>
+						</div>
+					</div>
+					
+				</article>
+			</section>
 		</div>
-		
+		<footer>
+			<div class="noga">
+				<a href="legal.html">Pravna obvestila</a> | 
+				<a href="authors.html">O avtorjih</a>
+			</div>
+		</footer>
 	</body>
-<html>
+</html>
