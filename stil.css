@@ -63,6 +63,7 @@ section{
 .prva{
 	width: 96%;
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 .item-grid{
@@ -94,14 +95,18 @@ section{
 	vertical-align: middle;
 }
 
-a {
+.meniji a,
+.kategorije a,
+footer a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
     color:black;
 }
 
-a:hover {
+.meniji a:hover,
+footer a:hover,
+.kategorije a:hover {
     background-color: #B6B6B6;
 }
 
@@ -136,7 +141,8 @@ a:hover {
 	clear: left;
 	width: 120px;
 }
-.login input{
+.login input,
+.login select{
 	float:left;
 }
 
@@ -154,16 +160,47 @@ a:hover {
 	padding-left: 5%;
 }
 
+.podatki{
+	float: left;
+	padding-left: 20%;
+	text-align: left;
+}
+
+#map{
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+	margin-bottom: 100px;
+}
+
+@media screen
+  and (max-width: 1200px){
+	  .kategorije li{
+			display: none;
+	  }
+	  .item-grid{
+			width: 46%;
+	  }
+	  .izdelek{
+		  margin-bottom: 100px;
+	  }
+  }
+  
+@media screen
+  and (max-width: 840px){
+	  
+  }
+
 @media screen
   and (min-width: 414px) {
     
 }
 @media screen
   and (min-width: 1024px) {
-    nav li {
+/*    nav li {
  	  float:none;
     }
 	#main {
 		flex-flow:row;
-	}
+	}*/
 }
