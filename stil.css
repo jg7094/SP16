@@ -1,7 +1,11 @@
 .desna-stran {
 	float:right;
 	clear: right;
-	
+	margin-top:5px;
+}
+
+header{
+	min-height: 42px;
 }
 
 body{
@@ -16,6 +20,10 @@ body{
 .centered-content {
 	padding-right: 5%;
 	padding-left: 5%;
+}
+
+li{
+	margin:0;
 }
 
 .kategorije li{
@@ -79,6 +87,7 @@ section,
 	text-align: center;
 }
 
+.slika img,
 .item-grid img{
 	border: 1px solid #ddd;
     border-radius: 4px;
@@ -103,7 +112,7 @@ section,
 .meniji a,
 .kategorije a,
 footer a {
-    padding: 10px 15px;
+    padding: 10px 11px;
     text-decoration: none;
     font-size: 15px;
     color:black;
@@ -163,12 +172,27 @@ footer a:hover,
 	float: left;
 	padding-top: 5%;
 	padding-left: 5%;
+	width:42%;
 }
 
 .podatki{
 	float: left;
 	padding-left: 20%;
 	text-align: left;
+	width: 100%;
+}
+
+.inf{
+	float:left;
+	width: 25%;
+}
+.zemljevid{
+	float:left;
+	width:65%;
+}
+
+#icon{
+	display:none;
 }
 
 #maps{
@@ -176,13 +200,6 @@ footer a:hover,
 	height: 400px;
 	background-color: grey;
 	margin-bottom: 100px;
-}
-
-.topnav{
-	display:none;
-	float:right;
-	margin:0;
-	padding:0;
 }
 
 @media screen
@@ -202,31 +219,51 @@ footer a:hover,
   and (max-width: 840px){
 	  .resp{
 		  display: none;
+		  float:right;
+		  clear:both;
+		  background: lightblue;
 	  }
+	  .drpdwn{
+		  display: inline;
+		  float:right;
+		  clear:both;
+		  padding-bottom:20px;
+	  }
+	  .drpdwn li{
+		  float: right;
+		  clear: right;
+		  padding: 10px 11px;
+		  
+	  }
+	  .drpdwn li:first-child{
+		  padding-top: 75%;
+	  }
+
+	  #icon{
+		  float: right;
+		  display: inline-block;
+		  position: absolute;
+		  right: 0;
+	  }
+	  
 	  .meniji img{
 		  width: 16%;
+		  min-height:42px;
 	  }
 	  .isci{
-		  vertical-align:middle;
+		  position: absolute;
+		  top: 25px;
+		  padding-left: 5%;
 	  }
-	  .topnav{
-		  display: inline;
+	  .centered-content {
+		padding:0;
 	  }
-	  ul.topnav li:not(:first-child) {display: none;}
-	  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
+	  ul{
+		  padding-left:0;
+	  }
+	  .izdelek{
+		  clear:both;
+	  }
   }
 
 @media screen
@@ -240,6 +277,8 @@ footer a:hover,
 	  }
 	  .item-grid{
 			width: 96%;
+	  }
+	  
   }
   
 @media screen
@@ -255,3 +294,4 @@ footer a:hover,
 		flex-flow:row;
 	}*/
 }
+

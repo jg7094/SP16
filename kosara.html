@@ -4,32 +4,26 @@
 		<title>JAG</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="stil.css" />
+		<script type="text/javascript" src="js/javascript.js" defer></script>
 	</head>
 	<body>
 		<header>
 			<div class="centered-content">
 				<div class="meniji">
-					<img src="img/logo.svg" alt="Logotip" />
-				<span class="resp">
-					<a href="index.html">Domov</a>
-					<a href="onas.html">O nas</a>
-					<a href="trgovina.html">Izdelki</a>
-					<a class="desna-stran" href="vpis.html">Prijava</a>
-					<a class="desna-stran" href="kosara.html">Košarica</a>
-				</span>
-					 <ul class="topnav" id="myTopnav">
-						<li class="icon">
-							<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-						</li>
+				<ul>
+					<li><img src="img/logo.svg" alt="Logotip" /></li>
+					<span class="resp">
+						
 						<li><a href="index.html">Domov</a></li>
 						<li><a href="onas.html">O nas</a></li>
 						<li><a href="trgovina.html">Izdelki</a></li>
-						<li><a href="vpis.html">Prijava</a></li>
-						<li><a href="kosara.html">Košarica</a></li>
+						<li><a class="desna-stran" href="vpis.html">Prijava</a></li>
+						<li><a class="desna-stran" href="kosara.html">Košarica</a></li>
 						
+					</span>
+					<li><a id="icon" href="javascript:void(0);" onclick="odpriMeni()">&#9776;</a></li>
+					<li><span class="isci">Išči <input type="text"></span></li>
 					</ul>
-					<span class="isci">Išči <input type="text"></span>
-					
 				</div>
 			</div>
 		</header>
@@ -54,7 +48,7 @@
 		<footer class="nakonc">
 			<div class="centered-content">
 				<a href="legal.html">Pravna obvestila</a> | 
-				<a href="authors.html">O avtorjih</a>
+				<a href="onas.html">O avtorjih</a>
 			</div>
 		</footer>
 	</body>

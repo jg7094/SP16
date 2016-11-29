@@ -1,15 +1,7 @@
-function initMap() {
-	var uluru = {lat: -25.363, lng: 131.044};
-	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 4,
-		center: uluru
-	});
-	var marker = new google.maps.Marker({
-		position: uluru,
-		map: map
-	});
+function start(){
+	var myElement = document.registerElement('my-element');
+	document.body.appendChild(new myElement());
 }
-
 	  
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -18,6 +10,27 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
+}
+
+function odpriMeni() {
+	 alert("Hello! I am an alert box!!");
+}
+
+function prikaziMenu() {
+ var getMenuItems = document.querySelector(".resp");
+
+ var menuItems = getMenuItems.children;
+ var i;
+ for (i = menuItems.length-1;i>0;--i) {
+     getMenuItems.append(menuItems[i]);
+ }
+
+ if (getMenuItems.className === "header") {
+     getMenuItems.className = "header small";
+ }
+ else if(getMenuItems.className != "header") {
+     getMenuItems.className = "header";
+ }
 }
 
 
