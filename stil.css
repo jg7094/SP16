@@ -6,6 +6,32 @@
 	text-align: center;
 }
 
+noscript{
+	color: red;
+	font-size: 20;
+	width: 100%;
+}
+
+.desna-stran img{
+	padding-left: 2%;
+	float: left;
+	height: 20px;
+	padding:0;
+	margin:0;
+	width: auto;
+}
+
+#vkosari{
+	margin-right:15%;
+	float: right;
+	color: white;
+	background: red;
+	border-radius: 20px;
+	font-weight: bold;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
 header{
 	min-height: 42px;
 }
@@ -121,7 +147,7 @@ footer a {
     text-decoration: none;
     font-size: 15px;
     color:black;
-	background-color:#E2A9F3;
+	background-color:lightgray;
 	border-radius: 5px;
 	margin-left:2%;
 }
@@ -129,7 +155,8 @@ footer a {
 .meniji a:hover,
 footer a:hover,
 .kategorije a:hover {
-    background-color: #B6B6B6;
+    background-color: gray;
+	color: white;
 }
 
 button{
@@ -158,6 +185,7 @@ button{
 .item-do button{
 	float: left;
 	width: 35%;
+	font-size: 17px;
 }
 
 .item-do span{
@@ -167,7 +195,7 @@ button{
 	text-align: center;
 }
 #komentar img{
-	width: 15px;
+	width: 20px;
 }
 .skrit{
 	display:none;
@@ -284,6 +312,16 @@ nav label,
 	padding: 1%;
 }
 
+.opis button{
+	font-size: 15px;
+	float: right;
+	width:30%;
+}
+
+#novvnos{
+	width: 60%;
+}
+
 @media screen
   and (max-width: 1300px){
 	  .kategorije li{
@@ -304,7 +342,7 @@ nav label,
 		  display: none;
 		  float:right;
 		  clear:both;
-		  background: lightblue;
+		  background: blue;
 	  }
 	  .drpdwn{
 		  display: inline;
@@ -329,7 +367,9 @@ nav label,
 		  position: absolute;
 		  right: 0;
 	  }
-	  
+	  #kos{
+		  width:30px;
+	  }
 	  .meniji img{
 		  width: 16%;
 		  min-height:42px;
@@ -353,6 +393,10 @@ nav label,
 	  
 	  #icon{
 		  width: auto;
+	  }
+	  .opis button,
+	  .zemljevid{
+		  clear:both;
 	  }
   }
 

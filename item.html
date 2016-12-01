@@ -18,7 +18,7 @@
 						<li><a href="onas.html">O nas</a></li>
 						<li><a href="trgovina.html">Izdelki</a></li>
 						<li><a class="desna-stran" href="vpis.html">Prijava</a></li>
-						<li><a class="desna-stran" href="kosara.html">Košarica</a></li>
+						<li><a class="desna-stran" href="kosara.html"><img id="kos" src="./img/shpcart.jpg" /><span id="vkosari">42</span></a></li>
 						
 					</span>
 					<li><a id="icon" href="javascript:void(0);" onclick="odpriMeni()">&#9776;</a></li>
@@ -32,7 +32,7 @@
 				<img src="./img/enjoy.jpg" alt="slika izdelka" />
 			</div>
 			<div class="izdelek">
-				<h1>IME</h1>
+				<h1>ENJOY</h1>
 				<form class="izbira" method="POST" action="#">
 					<p><label>Barva: </label>
 					<input type="color" name="favcolor" value="#0000ff"></p>
@@ -40,7 +40,7 @@
 					<input id="quantity" type="number" name="quantity" min="1" max="42" value="1" oninput="racunaj()"></p>
 					<p><label>Cena: </label>
 					<span class="price"><span id="cena">85.00</span> €</span></p>
-					<button type="button">Kupi</button>
+					<button type="button" onclick="dodajvkosaro()">Kupi</button>
 				</form>
 				<div class="opis">
 					<h2> Opis </h2>
@@ -49,8 +49,13 @@
 				</div>
 				<div class="opis">
 					<h2> Komentarji </h2>
-					<p>text text text text text text text text text 
-					text text text text text text text </p>
+					<span  id="novkomentar">
+						<p>Z izdelkom sem zelo zadovoljen</p>
+					</span>
+					<div class="dodajkoment">
+						<button onclick="dodajkomentar()">+ Dodaj komentar +</button>
+						<div><textarea id="novvnos" rows="4" cols="50"></textarea></div>
+					</div>
 				</div>
 			</div>
 		</div>

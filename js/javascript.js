@@ -43,21 +43,39 @@ function showPosition(position) {
 function showError(error) {
 	switch(error.code) {
 		case error.PERMISSION_DENIED:
-			x.innerHTML = "User denied the request for Geolocation."
+			x.innerHTML = "User denied the request for Geolocation.";
 			break;
 		case error.POSITION_UNAVAILABLE:
-			x.innerHTML = "Location information is unavailable."
+			x.innerHTML = "Location information is unavailable.";
 			break;
 		case error.TIMEOUT:
-			x.innerHTML = "The request to get user location timed out."
+			x.innerHTML = "The request to get user location timed out.";
 			break;
 		case error.UNKNOWN_ERROR:
-			x.innerHTML = "An unknown error occurred."
+			x.innerHTML = "An unknown error occurred.";
 			break;
 	}
 }
 
 
+function dodajkomentar(){
+	var tekst = document.getElementById('novvnos').value;
+	document.getElementById('novkomentar').innerHTML += "<p>"+tekst+"</P>";
+}
+
+function dodajvkosaro(){
+	var kolicina = Number(document.getElementById('quantity').value);
+	var stizdelkov = Number(document.getElementById('vkosari').innerHTML);
+	
+	document.getElementById('vkosari').innerHTML = (kolicina + stizdelkov);
+}
+function dodajizdelek(){
+	var stizdelkov = Number(document.getElementById('vkosari').innerHTML);
+	console.log(stizdelkov+1);
+	document.getElementById('vkosari').innerHTML = (stizdelkov+1);
+}
+
+/*
 function pokaziKomentar(){
 	
 	var c = document.getElementById("komentar").childNodes[3];
@@ -72,7 +90,7 @@ function pokaziKomentar(){
 		c.className = "skrit";
 	} 
 }
-
+*/
 
 var e = document.getElementById('komentar');
 e.onmouseover = function() {
