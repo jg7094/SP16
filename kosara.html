@@ -29,19 +29,21 @@
 		</header>
 		<div class="prva">
 			<div class="login">
-				<form class="article-comment" method="POST" action="#">
+				<form class="article-comment" method="POST" action="uspesennakup.html">
 					<label>Ime in priimek: </label> <input type="text" name="user" pattern=".* .*" title="Vpišite dve besedi" placeholder="ime priimek" required />
 					<label>Email: </label> <input type="email" name="user" required />
 					
 					<label>Naslov dostave: </label> <input type="text" name="user" pattern=".*" title="Vpišite dve besedi" placeholder="naslov" required />
 					<label>Način plačila:</label>
 					<select>
-						<option value="t1">Izbira1</option>
-						<option value="t2">Izbira2</option>
-						<option value="t3">Izbira3</option>
-						<option value="t4">Izbira4</option>
+						<option value="t1">PayPal</option>
+						<option value="t2">Ob prevzemu</option>
+						<option value="t3">Prek TRR</option>
 					</select>
-					<label><input type="submit" value="Nadaljuj" /></label>
+					<span>
+						<label id="gmb" > <input class="gumbek" type="submit" value="Nakup"></label>
+						
+					</span>
 				</form>
 			</div>
 		</div>

@@ -1,7 +1,9 @@
 .desna-stran {
 	float:right;
 	clear: right;
-	margin-top:5px;
+	margin-top:6px;
+	width: 65px;
+	text-align: center;
 }
 
 header{
@@ -27,7 +29,6 @@ li{
 }
 
 .kategorije li{
-	background-color: #E2EAF3;
 	padding: 10px 15px;
 	text-decoration:none;
 }
@@ -52,12 +53,17 @@ footer {
 	display:flex;
 }
 nav {
-	padding-left: 5%;
+	padding-left: 2%;
 	width: 22%;
 	padding-top: 2%;
 	box-sizing:border-box;
 	border-right:2px solid lightblue;
 	float: left;
+}
+
+nav h3{
+	border-bottom:1px solid lightgray;
+	padding-top:2%;
 }
 
 ul {
@@ -76,7 +82,7 @@ section,
 .prva{
 	width: 96%;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 }
 
 .item-grid{
@@ -116,6 +122,9 @@ footer a {
     text-decoration: none;
     font-size: 15px;
     color:black;
+	background-color:#E2A9F3;
+	border-radius: 5px;
+	margin-left:2%;
 }
 
 .meniji a:hover,
@@ -124,7 +133,16 @@ footer a:hover,
     background-color: #B6B6B6;
 }
 
+button{
+	border-radius:5px;
+	background-color: lightblue; 
+}
 
+.price{
+	color: green;
+	font-weight: bold;
+	font-size: 150%;
+}
 
 .item-do label{
 	width: 35%;
@@ -144,20 +162,62 @@ footer a:hover,
 	font-weight: bold;
 	text-align: center;
 }
+#komentar img{
+	width: 15px;
+}
+.skrit{
+	display:none;
+}
+.popup{
+	display: block;
+	position: absolute;
+	float: left;
+	z-index: 10;
+	width: 200px;
+	background-color:yellow;
+	border: 1px solid black;
+	border-radius:10px;
+}
+
+.izbira,
+.opis{
+	border: 1px dotted black;
+	border-radius: 10px;
+	padding: 2%;
+	margin: 1%;
+}
+
+.izbira button{
+	font-size: 160%;
+	width: 50%;
+}
+
 .login{
-	padding-top: 10%;
+	padding: 10%;
 	float: left;
 	margin-left: 40%;
+	border: 1px dotted black;
+	border-radius: 10px;
+	margin-bottom: 70px;
+	background-color: lightgray;
 }
+nav label,
 .login label,
 .izbira lable{
 	float: left;
 	clear: left;
-	width: 120px;
+	width: 150px;
+	margin-top: 7%;
 }
 .login input,
 .login select{
 	float:left;
+	margin-top: 7%;
+	width: 150px;
+}
+
+.cena{
+	width: 75%;
 }
 
 .nakonc {
@@ -202,8 +262,24 @@ footer a:hover,
 	margin-bottom: 100px;
 }
 
+.gumbek {
+	background-color: lightblue;
+	font-size: 160%;
+	width: 100%;
+	padding: 10%;
+	border-radius: 10px;
+	float: right;
+	margin-left: 100%;
+}
+
+#kupljeno{
+	background: lightgreen;
+	border-radius: 5px;
+	padding: 1%;
+}
+
 @media screen
-  and (max-width: 1200px){
+  and (max-width: 1300px){
 	  .kategorije li{
 			display: none;
 	  }
@@ -216,7 +292,8 @@ footer a:hover,
   }
   
 @media screen
-  and (max-width: 840px){
+  and (max-width: 930px){
+
 	  .resp{
 		  display: none;
 		  float:right;
@@ -228,6 +305,7 @@ footer a:hover,
 		  float:right;
 		  clear:both;
 		  padding-bottom:20px;
+		  width: 120px;
 	  }
 	  .drpdwn li{
 		  float: right;
@@ -236,7 +314,7 @@ footer a:hover,
 		  
 	  }
 	  .drpdwn li:first-child{
-		  padding-top: 75%;
+		  padding-top: 60%;
 	  }
 
 	  #icon{
@@ -250,6 +328,11 @@ footer a:hover,
 		  width: 16%;
 		  min-height:42px;
 	  }
+	  .meniji a{
+		  width: 75px;
+		  float: right;
+		  clear: right;
+	  }
 	  .isci{
 		  position: absolute;
 		  top: 25px;
@@ -261,8 +344,9 @@ footer a:hover,
 	  ul{
 		  padding-left:0;
 	  }
-	  .izdelek{
-		  clear:both;
+	  
+	  #icon{
+		  width: auto;
 	  }
   }
 

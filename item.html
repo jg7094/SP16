@@ -29,28 +29,26 @@
 		</header>
 		<div id="main" class="prva">
 			<div class="slika">
-				<img src="./img/sample.svg" alt="slika izdelka" />
+				<img src="./img/enjoy.jpg" alt="slika izdelka" />
 			</div>
 			<div class="izdelek">
+				<h1>IME</h1>
 				<form class="izbira" method="POST" action="#">
-					<p><label>Text</label>
-					<select>
-						<option value="t1">Izbira1</option>
-						<option value="t2">Izbira2</option>
-						<option value="t3">Izbira3</option>
-						<option value="t4">Izbira4</option>
-					</select></p>
-					<p><label>Text</label>
-					<select>
-						<option value="t1">Izbira1</option>
-						<option value="t2">Izbira2</option>
-						<option value="t3">Izbira3</option>
-						<option value="t4">Izbira4</option>
-					</select></p>
+					<p><label>Barva: </label>
+					<input type="color" name="favcolor" value="#0000ff"></p>
+					<p><label>Količina: </label>
+					<input type="number" name="quantity" min="1" max="42" value="1"></p>
+					<p><label>Cena: </label>
+					<span class="price"><span id="cena">345</span> €</span></p>
 					<button type="button">Kupi</button>
 				</form>
 				<div class="opis">
 					<h2> Opis </h2>
+					<p>text text text text text text text text text 
+					text text text text text text text </p>
+				</div>
+				<div class="opis">
+					<h2> Komentarji </h2>
 					<p>text text text text text text text text text 
 					text text text text text text text </p>
 				</div>
