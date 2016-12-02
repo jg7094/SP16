@@ -30,8 +30,8 @@
 		<div class="prva">
 			<div class="login">
 				<form class="article-comment" method="POST" action="index.html">
-					<label>Email: </label> <input type="email" name="user" required />
-					<label>Geslo: </label> <input type="password" name="geslo" placeholder="geslo" required />
+					<label>Email: </label> <input type="email" title="vpiši veljaven email naslov" name="user" required />
+					<label>Geslo: </label> <input type="password" name="geslo" placeholder="geslo" pattern=".{6,}" title="6 ali več znakov" required />
 					<label><input class="gumbek" type="submit" value="Prijava" /></label>
 				</form>
 			</div>

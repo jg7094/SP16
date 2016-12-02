@@ -31,9 +31,9 @@
 			<div class="login">
 				<form class="article-comment" method="POST" action="uspesennakup.html">
 					<label>Ime in priimek: </label> <input type="text" name="user" pattern=".* .*" title="Vpišite dve besedi" placeholder="ime priimek" required />
-					<label>Email: </label> <input type="email" name="user" required />
+					<label>Email: </label> <input type="email" name="user" title="vpiši veljaven email naslov" required />
 					
-					<label>Naslov dostave: </label> <input type="text" name="user" pattern=".*" title="Vpišite dve besedi" placeholder="naslov" required />
+					<label>Naslov dostave: </label> <input type="text" name="user" pattern=".* [0-9]*" title="Vpišite ulico in hišno število" placeholder="ulica in hišna številka" required />
 					<label>Način plačila:</label>
 					<select>
 						<option value="t1">PayPal</option>
