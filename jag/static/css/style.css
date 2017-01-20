@@ -89,7 +89,7 @@ noscript{
 	float:right;
 	clear: right;
 	margin-top:6px;
-	width: 65px;
+	width: 100px;
 	text-align: center;
 }
 
@@ -106,6 +106,17 @@ noscript{
 	float:right;
 	margin-right:5%;
 }
+.nslv{
+    padding-left: 3%;
+}
+.urediizd{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+}
+.narocilo button{
+    float:right;
+}
 
 .opis button{
 	font-size: 15px;
@@ -120,6 +131,16 @@ noscript{
 	border-radius: 10px;
 	float: right;
 	margin-left: 100%;
+}
+.gumbek2,
+.admingmb{
+	background-color: lightblue;
+	font-size: 160%;
+	width: 100%;
+	padding: 5%;
+	border-radius: 10px;
+	float: right;
+	margin-bottom: 10%;
 }
 
 .item-grid{
@@ -217,7 +238,10 @@ footer a:hover,
 	padding: 2%;
 	margin: 1%;
 }
-
+.urediizd button{
+        font-size: 160%;
+	width: 25%;
+}
 .izbira button{
 	font-size: 160%;
 	width: 50%;
@@ -226,7 +250,7 @@ footer a:hover,
 .login{
 	padding: 10%;
 	float: left;
-	margin-left: 40%;
+	margin-left: 30%;
 	border: 1px dotted black;
 	border-radius: 10px;
 	margin-bottom: 70px;
@@ -234,14 +258,34 @@ footer a:hover,
 	width: 22%;
 }
 .kosara{
-	padding: 10%;
+	padding-left: 4%;
+        padding-right: 4%;
 	float: left;
 	margin-left: 5%;
 	border: 1px dotted black;
 	border-radius: 10px;
 	margin-bottom: 70px;
 	background-color: lightgray;
-	width: 22%;
+	width: 36%;
+}
+.dta{
+        float: left;
+	clear: left;
+	margin-top: 7%;
+        width: 150px;
+}
+.dtalev{
+    float: left;
+    margin-top: 7%;
+}
+.kosara input{
+        float: left;
+}
+
+.kosara input{
+    float:left;
+	margin-top: 7%;
+	width: 100%;
 }
 nav label,
 .login label,
@@ -261,12 +305,18 @@ nav label,
 .cena{
 	width: 75%;
 }
+.cena2{
+        width: 35%;
+	color: green;
+	font-size: 150%;
+	font-weight: bold;
+}
 
 .nakonc {
 	background-color:#1464f6;
-    position:fixed;
-    bottom:0;
-    width: 100%;
+        position:fixed;
+        bottom:0;
+        width: 100%;
 }
 
 .slika,
@@ -336,6 +386,40 @@ nav label,
 
 #novvnos{
 	width: 60%;
+}
+
+#main2 {
+    margin-right: auto;
+    width: 70%;
+}
+
+.update-cart {
+    width: 30px;
+}
+
+.important {
+    color: red;
+} 
+
+.izdelek2 {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    min-height: 160px;
+    margin: 1em;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+#vozicek2 {
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    background-color: #E8E8E8;
+    min-width: 30%;
+    margin-top: 116px;
 }
 
 @media screen
